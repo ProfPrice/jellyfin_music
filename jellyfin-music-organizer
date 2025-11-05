@@ -1,0 +1,23 @@
+#!/usr/bin/env python3
+"""
+Jellyfin Music Organizer - Launcher Script
+This script launches the Jellyfin Music Organizer GUI application
+"""
+
+import sys
+import os
+
+# Add the package directory to the Python path if running from source
+if __name__ == '__main__':
+    # Try to import the package
+    try:
+        from jellyfin_music_organizer.main import main
+    except ImportError:
+        # If not installed, try to run from the local directory
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        sys.path.insert(0, script_dir)
+        from jellyfin_music_organizer.main import main
+    
+    # Run the application
+    main()
+

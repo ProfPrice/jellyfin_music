@@ -1,0 +1,15 @@
+# Include package data files
+include README.md
+include LICENSE
+include requirements.txt
+include jellyfin-music-organizer
+include jellyfin-music-organizer.desktop
+
+# Include package resources
+recursive-include jellyfin_music_organizer *.ico
+recursive-include jellyfin_music_organizer/notification_audio *.wav
+
+# Exclude compiled Python files
+global-exclude __pycache__
+global-exclude *.py[co]
+

@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Jellyfin Music Organizer
+Comment=Organize music files for Jellyfin Media Server
+Exec=jellyfin-music-organizer
+Icon=jellyfin-music-organizer
+Terminal=false
+Categories=AudioVideo;Audio;Utility;
+Keywords=jellyfin;music;organizer;media;audio;
+StartupNotify=true
+StartupWMClass=jellyfin-music-organizer
+

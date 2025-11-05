@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jellyfin-music-organizer"
+version = "3.06"
+description = "Organize music files for Jellyfin Media Server"
+readme = "readme.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+keywords = ["jellyfin", "music", "organizer", "media", "server", "audio"]
+authors = [
+    {name = "Original Author"}
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: End Users/Desktop",
+    "Topic :: Multimedia :: Sound/Audio",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: POSIX :: Linux",
+    "Environment :: X11 Applications :: Qt",
+]
+dependencies = [
+    "PyQt5>=5.15.0",
+    "mutagen>=1.45.0",
+    "QDarkStyle>=3.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/ImKyleDouglas/jellyfin_music"
+Repository = "https://github.com/ImKyleDouglas/jellyfin_music.git"
+
+[project.scripts]
+jellyfin-music-organizer = "jellyfin_music_organizer.main:main"
+
+[project.gui-scripts]
+jellyfin-music-organizer-gui = "jellyfin_music_organizer.main:main"
+
+[tool.setuptools]
+packages = ["jellyfin_music_organizer"]
+
+[tool.setuptools.package-data]
+jellyfin_music_organizer = ["*.ico", "notification_audio/*.wav"]
+

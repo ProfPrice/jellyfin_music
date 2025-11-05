@@ -1,0 +1,17 @@
+# Jellyfin Music Organizer Dependencies
+# Compatible with Ubuntu 24.04 LTS
+
+# GUI Framework
+PyQt5>=5.15.0
+PyQt5-Qt5>=5.15.0
+PyQt5-sip>=12.8.0
+
+# Audio metadata handling
+mutagen>=1.45.0
+
+# Dark theme styling
+QDarkStyle>=3.0.0
+
+# Additional PyQt5 multimedia support
+PyQt5-multimedia>=5.15.0
+
